@@ -5,7 +5,7 @@
 
 void MATRIX::Gene_random()
 {
-    srand(time(NULL));
+
     for (int t=0;t<row;t++)
     {
         for (int i=0;i<col;i++)
@@ -48,7 +48,7 @@ MATRIX MATRIX::operator+ (MATRIX B)
    else
    {
        std::cout<<"HAI MA TRAN KO THE CONG!\n";
-       return *this;
+       return MATRIX();
    }
 }
 MATRIX MATRIX::operator- (MATRIX B)
@@ -68,7 +68,7 @@ MATRIX MATRIX::operator- (MATRIX B)
    else
    {
        std::cout<<"HAI MA TRAN KO THE TRU!\n";
-       return *this;
+       return MATRIX();
    }
 }
 MATRIX MATRIX::operator* (MATRIX B)
@@ -91,7 +91,7 @@ MATRIX MATRIX::operator* (MATRIX B)
    else
    {
        std::cout<<"HAI MA TRAN KO THE NHAN!\n";
-       return *this;
+       return MATRIX();
    }
 }
 
