@@ -2,11 +2,13 @@
 #include "MATRIX.h"
 #include <iostream>
 #include <time.h>
+#include <cstdlib>
 #include <vector>
 using namespace std;
 
 int main()
 {
+    srand(time(NULL));
     int row,col;
     cout<<"Nhap kich thuoc Ma tran A: ";
     cin>>row>>col;
